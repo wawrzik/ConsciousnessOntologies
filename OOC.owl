@@ -132,6 +132,7 @@
     <!-- https://www.w3id.org/people/wawrzik/ooc#has_perception -->
 
     <owl:ObjectProperty rdf:about="https://www.w3id.org/people/wawrzik/ooc#has_perception">
+        <owl:inverseOf rdf:resource="https://www.w3id.org/people/wawrzik/ooc#perception_about"/>
         <rdfs:label>has perception</rdfs:label>
     </owl:ObjectProperty>
     
@@ -263,7 +264,6 @@
     <!-- https://www.w3id.org/people/wawrzik/ooc#Truth -->
 
     <owl:Class rdf:about="https://www.w3id.org/people/wawrzik/ooc#Truth">
-        <owl:equivalentClass rdf:resource="https://www.w3id.org/people/wawrzik/ooc#integrity"/>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue"/>
@@ -295,6 +295,8 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>Truth</rdfs:label>
+        <rdfs:label>integrity</rdfs:label>
     </owl:Class>
     
 
@@ -814,16 +816,6 @@
     
 
 
-    <!-- https://www.w3id.org/people/wawrzik/ooc#essence -->
-
-    <owl:Class rdf:about="https://www.w3id.org/people/wawrzik/ooc#essence">
-        <owl:equivalentClass rdf:resource="https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness"/>
-        <rdfs:subClassOf rdf:resource="https://www.w3id.org/people/wawrzik/ooc#context"/>
-        <obo:IAO_0000115>what a thing is or means rather than what it appears to be</obo:IAO_0000115>
-    </owl:Class>
-    
-
-
     <!-- https://www.w3id.org/people/wawrzik/ooc#excellence -->
 
     <owl:Class rdf:about="https://www.w3id.org/people/wawrzik/ooc#excellence">
@@ -889,7 +881,6 @@
     <!-- https://www.w3id.org/people/wawrzik/ooc#falsehood -->
 
     <owl:Class rdf:about="https://www.w3id.org/people/wawrzik/ooc#falsehood">
-        <owl:equivalentClass rdf:resource="https://www.w3id.org/people/wawrzik/ooc#non-integrity"/>
         <owl:equivalentClass>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.ontology-of-units-of-measure.org/resource/om-2/hasNumericalValue"/>
@@ -921,6 +912,8 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <rdfs:label>falsehood</rdfs:label>
+        <rdfs:label>non-integrity</rdfs:label>
     </owl:Class>
     
 
@@ -1199,14 +1192,6 @@
     
 
 
-    <!-- https://www.w3id.org/people/wawrzik/ooc#integrity -->
-
-    <owl:Class rdf:about="https://www.w3id.org/people/wawrzik/ooc#integrity">
-        <rdfs:subClassOf rdf:resource="https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness"/>
-    </owl:Class>
-    
-
-
     <!-- https://www.w3id.org/people/wawrzik/ooc#keep_holy_company -->
 
     <owl:Class rdf:about="https://www.w3id.org/people/wawrzik/ooc#keep_holy_company">
@@ -1268,6 +1253,7 @@
         <obo:IAO_0000117>calibration</obo:IAO_0000117>
         <obo:IAO_0000117>level</obo:IAO_0000117>
         <obo:IAO_0000600>Everything in the universe gives off / radiates an energy pattern that can be read throughout all time. Similar to radio waves these energy patterns can be measured. Something which is true, registers in consciousness (indicated by the level of Truth at 200). Something which is false (indicated by the level of falsehood below 200) does not register in consciousness. Accordingly, the level indicates the degree of the presence of Truth. This is comparable to a scale of temperature, where various degrees of heat can be measued.</obo:IAO_0000600>
+        <rdfs:label>essence</rdfs:label>
         <rdfs:label>level of consciousness</rdfs:label>
         <rdfs:seeAlso>Book &quot;Power vs. Force: The Hidden Determinants of Human Behaviour&quot; by David Hawkins</rdfs:seeAlso>
     </owl:Class>
@@ -1481,14 +1467,6 @@
                 </owl:allValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- https://www.w3id.org/people/wawrzik/ooc#non-integrity -->
-
-    <owl:Class rdf:about="https://www.w3id.org/people/wawrzik/ooc#non-integrity">
-        <rdfs:subClassOf rdf:resource="https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness"/>
     </owl:Class>
     
 
