@@ -112,7 +112,7 @@
 
     <owl:ObjectProperty rdf:about="https://www.w3id.org/people/wawrzik/ooc#defining_factor_for">
         <owl:inverseOf rdf:resource="https://www.w3id.org/people/wawrzik/ooc#is_defined_by_factor_of"/>
-        <obo:IAO_0000115>used ti indicate the influnce of a contextual factor to a conent</obo:IAO_0000115>
+        <obo:IAO_0000115>used to indicate the influnce of a contextual factor to a conent</obo:IAO_0000115>
         <rdfs:label>defining factor for</rdfs:label>
     </owl:ObjectProperty>
     
@@ -1233,20 +1233,22 @@
     <owl:Class rdf:about="https://www.w3id.org/people/wawrzik/ooc#level_of_consciousness">
         <rdfs:subClassOf rdf:resource="https://www.w3id.org/people/wawrzik/ooc#context"/>
         <rdfs:subClassOf>
-            <owl:Class>
-                <owl:unionOf rdf:parseType="Collection">
-                    <rdf:Description rdf:about="https://www.w3id.org/people/wawrzik/ooc#God"/>
-                    <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://www.w3id.org/people/wawrzik/ooc#represents_degree_of"/>
-                        <owl:someValuesFrom rdf:resource="https://www.w3id.org/people/wawrzik/ooc#ego"/>
-                    </owl:Restriction>
-                </owl:unionOf>
-            </owl:Class>
-        </rdfs:subClassOf>
-        <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="https://www.w3id.org/people/wawrzik/ooc#is_loc_of"/>
                 <owl:someValuesFrom rdf:resource="https://www.w3id.org/people/wawrzik/ooc#object_of_truth"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="https://www.w3id.org/people/wawrzik/ooc#represents_degree_of"/>
+                <owl:someValuesFrom>
+                    <owl:Class>
+                        <owl:unionOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://www.w3id.org/people/wawrzik/ooc#God"/>
+                            <rdf:Description rdf:about="https://www.w3id.org/people/wawrzik/ooc#ego"/>
+                        </owl:unionOf>
+                    </owl:Class>
+                </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
         <obo:IAO_0000115>A level of consciousness is a quantified logarithmic energy level gauged and calibrated according to the Map of Consciousness (MoC) by Dr. David R. Hawkins</obo:IAO_0000115>
