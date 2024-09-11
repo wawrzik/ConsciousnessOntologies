@@ -11,9 +11,10 @@
      xmlns:terms="http://purl.org/dc/terms/">
     <owl:Ontology rdf:about="https://www.w3id.org/people/wawrzik/ooc">
         <owl:versionIRI rdf:resource="https://www.w3id.org/people/wawrzik/ooc/1.1.0"/>
-        <dc:description>The OWL Ontology of Consciousness is a consolidation of a general theory of consciousness. It serces as a standard to desrcibe, use and apply consciousness in modern computer systems. The unified data model can be imported whenever consciousness technologies want to be incorporated by users, researchers and scientiets or the general public.</dc:description>
+        <dc:description>The OWL Ontology of Consciousness is a consolidation of a general theory of consciousness. It serces as a standard to desrcibe, use and apply consciousness in modern computer systems. The unified data model can be imported whenever consciousness technologies need to be incorporated by users, researchers, scientists or the general public.</dc:description>
+        <dc:language>en</dc:language>
         <dc:license>https://creativecommons.org/licenses/by/4.0/</dc:license>
-        <dc:title>The OWL Ontology of Consciousness</dc:title>
+        <dc:title>OWL Ontology of Consciousness</dc:title>
         <terms:created>2024-08-21</terms:created>
         <terms:created>OWL Ontology of Consciousness</terms:created>
         <terms:creator>Frank Wawrzik</terms:creator>
@@ -69,6 +70,12 @@
     <!-- http://purl.org/dc/elements/1.1/description -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/description"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/language -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/language"/>
     
 
 
